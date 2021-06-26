@@ -1,5 +1,5 @@
 This is an implementation of a simple client-server Network File System (NFS) over a simulated virtual disk containing 1,024 disk blocks; each 128 bytes in size.
-The server is not a multi-client program meaning the server serves only one client over a TCP session's lifetime. 
+The server is not a multi-client program meaning the server serves only one client over a TCP session's lifetime; to make it multi-client, we need implement several threads using multi-threading. 
 
 Shell.cpp is the client side of the file system that processes commands by creating a TCP socket, connecting to the server when mounted, sending commands to the server, and waiting for a response. 
 
